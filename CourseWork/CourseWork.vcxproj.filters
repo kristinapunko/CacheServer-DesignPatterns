@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{180c0ae4-eb89-4f3c-80f3-4eeb5a4ca1b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="database">
+      <UniqueIdentifier>{003b18ee-0928-4cb3-aa90-bc0a261b03b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cache">
+      <UniqueIdentifier>{ee86391c-aaa9-4056-80c3-94177c43c2c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="decorators">
+      <UniqueIdentifier>{b6d9df43-b785-4f55-b2f9-43af4fd934fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="chain">
+      <UniqueIdentifier>{422bf492-fa30-40e2-a715-5f67ecdcd679}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="factory">
+      <UniqueIdentifier>{091ffd48-1483-4b39-a12f-74fd1d61c384}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="facade">
+      <UniqueIdentifier>{e5986804-ea56-4e52-a07d-9232e5ae8c21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="observer">
+      <UniqueIdentifier>{9b1d3271-50b9-4fe7-8467-24214fdaa82b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="visitor">
+      <UniqueIdentifier>{dc9f074b-b891-46e0-a348-8aed42353ec2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="builder">
+      <UniqueIdentifier>{aba89540-afb5-4122-b10a-8da01fee4700}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="flyweight">
+      <UniqueIdentifier>{af2ad9dc-27ba-49fe-93d7-c31f05765bb7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\IDataService.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\CacheEntry.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="database\RealDatabase.h">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="cache\CacheProxy.h">
+      <Filter>cache</Filter>
+    </ClInclude>
+    <ClInclude Include="cache\EvictionStrategy.h">
+      <Filter>cache</Filter>
+    </ClInclude>
+    <ClInclude Include="decorators\CompressionDecorator.h">
+      <Filter>decorators</Filter>
+    </ClInclude>
+    <ClInclude Include="chain\Handler.h">
+      <Filter>chain</Filter>
+    </ClInclude>
+    <ClInclude Include="chain\AuthHandler.h">
+      <Filter>chain</Filter>
+    </ClInclude>
+    <ClInclude Include="factory\CacheFactory.h">
+      <Filter>factory</Filter>
+    </ClInclude>
+    <ClInclude Include="facade\ServerFacade.h">
+      <Filter>facade</Filter>
+    </ClInclude>
+    <ClInclude Include="observer\IObserver.h" />
+    <ClInclude Include="observer\AdminLogger.h" />
+    <ClInclude Include="visitor\IVisitor.h" />
+    <ClInclude Include="visitor\StatsVisitor.h" />
+    <ClInclude Include="flyweight\MetadataFlyweight.h" />
+    <ClInclude Include="builder\ResponseBuilder.h" />
+    <ClInclude Include="cache\LRUStrategy.h" />
+    <ClInclude Include="core\Flyweight.h" />
+    <ClInclude Include="cache\FIFOStrategy.h" />
+    <ClInclude Include="observer\ConsoleLogger.h" />
+    <ClInclude Include="factory\FlyweightFactory.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="database\RealDatabase.cpp" />
+    <ClCompile Include="cache\CacheProxy.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="decorators\CompressionDecorator.cpp" />
+    <ClCompile Include="cache\FIFOStrategy.cpp" />
+    <ClCompile Include="cache\LRUStrategy.cpp" />
+    <ClCompile Include="factory\FlyweightFactory.cpp" />
+  </ItemGroup>
+</Project>
